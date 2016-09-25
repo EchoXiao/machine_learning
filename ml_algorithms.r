@@ -1,8 +1,5 @@
 # machine_learning
 
-#Project 1
-#5/4/2016
-
 
 which(is.na(p$Employees))
 null <- which(is.na(p$Employees))
@@ -50,10 +47,6 @@ plot((1:10),wss,type="b",col="blue")
 par(new=T)
 plot((1:10),bss,type="b",axes=F, xlab="",ylab="",col="dark red")
 par(new=F)
-
-
-
-
 
 #k-nn and decision tree
 p_dc <- p[,c(4:9)]
