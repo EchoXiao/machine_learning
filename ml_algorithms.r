@@ -1,12 +1,10 @@
 # machine_learning
 
-
 which(is.na(p$Employees))
 null <- which(is.na(p$Employees))
 p <- p[-null,]
 
-
-#hierarhical clustering
+#hierarhical clustering -----------------------------------
 p_hc <- p[,c(4:9)]
 euclid <- dist(p_hc, method="euclidean")
 View(as(euclid, "matrix"))
@@ -21,18 +19,12 @@ summary(p_hc[p_hc$cluster == 4,][-ncol(p_hc)])
 summary(p_hc[p_hc$cluster == 5,][-ncol(p_hc)])
 summary(p_hc[p_hc$cluster == 6,][-ncol(p_hc)])
 
-
-
-
-
-#correlation
+#correlation ------------------------------------------------
 
 cor(p[,c(1,4,6:9)])
 
 
-#k-means
-
-
+#k-means ---------------------------------------------------
 View(p)
 wss <- c(rep(0,10))
 bss <- c(rep(0,10))
